@@ -1,0 +1,5 @@
+1,Anca,student,true,iformatica,7.4
+2,Vali,angajat,false,informatician,100000
+11,Andrei,angajat,true,bibiotecar,4000
+119,Andrei,angajat,true,bibiotecar,4000
+119,Andrei,angajat,true,bibiotecar,4000

@@ -1,0 +1,2 @@
+1,1,Matematica de baza,2008,false,false,manual,V
+2,2,Literatura romana,2000,true,false,romana,VI
