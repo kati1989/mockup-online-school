@@ -75,6 +75,15 @@ public class ControllerBook {
         }
     }
 
+    public void stergeBook(String nume){
+        for(int i=0;i< books.size();i++){
+            if(books.get(i).getBookName().equals(nume))
+            {
+                books.remove(books.get(i));
+            }
+        }
+    }
+
 }
 
 

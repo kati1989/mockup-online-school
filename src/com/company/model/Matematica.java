@@ -41,7 +41,7 @@ public class Matematica extends Book{
     @Override
     public String toString(){
         String text="";
-        text+=getId()+","+getPersonId()+","+getBookName()+","+getCreatedAt()+","+isStatus()+","+isCumparata()+","+tip+","+"clasa";
+        text+=getId()+","+getPersonId()+","+getBookName()+","+getCreatedAt()+","+getCategory()+","+isStatus()+","+isCumparata()+","+tip+","+clasa;
         return  text;
     }
 

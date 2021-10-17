@@ -43,7 +43,7 @@ public class Literatura extends Book{
     @Override
     public String toString(){
         String text="";
-        text+=getId()+","+getPersonId()+","+getBookName()+","+getCreatedAt()+","+isStatus()+","+isCumparata()+","+limba+","+"clasa";
+        text+=getId()+","+getPersonId()+","+getBookName()+","+getCreatedAt()+","+getCategory()+","+isStatus()+","+isCumparata()+","+limba+","+clasa;
         return  text;
     }
 
