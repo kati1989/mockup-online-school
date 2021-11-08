@@ -1,3 +1,0 @@
-1,1,Matematica de baza,2008,matematica,true,false,manual,V
-2,2,Literatura romana,2000,literatura,true,false,romana,VI
-1,2,Bazele matematicii,1998,matematica,true,false,manual,V

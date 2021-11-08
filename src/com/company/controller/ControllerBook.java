@@ -1,4 +1,8 @@
-package com.company.model;
+package com.company.controller;
+
+import com.company.model.Book;
+import com.company.model.Literatura;
+import com.company.model.Matematica;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -15,9 +19,11 @@ public class ControllerBook {
        this.cale=cale;
        load();
     }
+
     public void load(){
         File file=new File(cale);
         try{
+            books.clear();
             Scanner scanner=new Scanner(file);
             while(scanner.hasNextLine()){
                 String line= scanner.nextLine();
@@ -32,6 +38,7 @@ public class ControllerBook {
             e.printStackTrace();
         }
     }
+
     public void adauga(Book book){
         books.add(book);
     }
@@ -41,7 +48,7 @@ public class ControllerBook {
         for(int i=0; i< books.size();i++){
             text+=books.get(i).toString()+"\n";
         }
-        System.out.println("test");
+
         return text;
 
     }
@@ -54,7 +61,7 @@ public class ControllerBook {
             PrintWriter p=new PrintWriter(w);
             p.print(this.toSave());
             p.close();
-            System.out.println("test");
+
 
         }catch (Exception e){
             e.printStackTrace();
@@ -75,15 +82,33 @@ public class ControllerBook {
         }
     }
 
-    public void stergeBook(String nume){
+    public void stergeBook(int id){
         for(int i=0;i< books.size();i++){
-            if(books.get(i).getBookName().equals(nume))
+            if(books.get(i).getId()==id)
             {
-                books.remove(books.get(i));
+                books.remove(i);
             }
         }
     }
 
+    //returneaza poz cartii dupa id
+    public  int poz(int id){
+        for(int i=0;i< books.size();i++){
+            if(books.get(i).getId()==id){
+                return  i;
+            }
+        }
+        return -1;
+    }
+
+    public boolean isBook(String bookName ){
+        for(int i=0;i< books.size();i++){
+            if(books.get(i).getBookName().equals(bookName))
+                return true;
+        }
+
+        return  false;
+    }
 }
 
 

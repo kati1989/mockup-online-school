@@ -1,4 +1,8 @@
-package com.company.model;
+package com.company.controller;
+
+import com.company.model.Angajat;
+import com.company.model.Persoana;
+import com.company.model.Student;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -6,11 +10,11 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class CotrollerPersoana {
+public class ControllerPersoana {
     ArrayList<Persoana> persoane;
     private String cale;
 
-    public CotrollerPersoana(String cale){
+    public ControllerPersoana(String cale){
         persoane=new ArrayList<>();
         this.cale=cale;
         load();
