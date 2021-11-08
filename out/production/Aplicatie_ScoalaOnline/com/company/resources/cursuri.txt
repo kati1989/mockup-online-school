@@ -1,0 +1,2 @@
+1,Algebra,cursMatematica,true,admitere
+2,Geometrie,cursMatematica,true,admitere
